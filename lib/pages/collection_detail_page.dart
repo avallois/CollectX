@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/collection_detail_header.dart';
+import '../widgets/collection/collection_header.dart';
 import '../providers/collections.dart';
 import '../providers/collection_elements.dart';
 
-import '../widgets/collection_element_list_item.dart';
+import '../widgets/collection/collection_element_list_item.dart';
 
 class CollectionDetailPage extends StatelessWidget {
   static const namedRoute = './collection-detail';

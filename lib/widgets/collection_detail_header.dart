@@ -4,12 +4,12 @@ import 'package:auto_size_text/auto_size_text.dart';
 class CollectionDetailHeader extends StatelessWidget {
   final String collectionTitle;
   final String collectionDescription;
-  final String collectionAuthor;
+  // final String collectionAuthor;
 
   CollectionDetailHeader({
     @required this.collectionTitle,
     @required this.collectionDescription,
-    @required this.collectionAuthor,
+    // @required this.collectionAuthor,
   });
 
   @override
@@ -99,7 +99,8 @@ class CollectionDetailHeader extends StatelessWidget {
                     text: 'Collection by ',
                     children: <TextSpan>[
                       TextSpan(
-                        text: collectionAuthor,
+                        // text: collectionAuthor,
+                        text: 'USER NAME',
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
                     ],

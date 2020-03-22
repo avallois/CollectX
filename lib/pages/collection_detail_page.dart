@@ -26,7 +26,7 @@ class CollectionDetailPage extends StatelessWidget {
               ? CollectionDetailHeader(
                   collectionTitle: collection.title,
                   collectionDescription: collection.description,
-                  collectionAuthor: collection.author,
+                  // collectionAuthor: collection.author,
                 )
               : CollectionElementListItem(
                   elementTitle: collectionElements[index - 1].title,

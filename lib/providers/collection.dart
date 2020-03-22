@@ -4,12 +4,12 @@ class Collection with ChangeNotifier {
   final String id;
   final String title;
   final String description;
-  final String author;
+  // final String author;
 
   Collection({
     @required this.id,
     @required this.title,
     @required this.description,
-    @required this.author,
+    // @required this.author,
   });
 }

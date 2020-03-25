@@ -9,34 +9,82 @@ class ProfileCollectionListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final collection = Provider.of<Collection>(context);
+
+    TextStyle defaultSubtitleTextStyle = TextStyle(
+      fontSize: 15.0,
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+    );
+
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed(CollectionDetailPage.namedRoute, arguments: collection.id);
+        Navigator.of(context).pushNamed(CollectionDetailPage.namedRoute,
+            arguments: collection.id);
       },
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(13),
         child: Card(
-          elevation: 3,
-          margin: EdgeInsets.all(6),
+          color: Colors.deepPurple,
+          elevation: 1.0,
+          margin: EdgeInsets.all(3.0),
           child: Container(
-            color: Colors.white,
-            height: 120,
+            height: 100,
             child: ListTile(
-              title:
-              Padding(
-                padding: const EdgeInsets.all(14.0),
-                child:
-                //Center(
-                  //child:
-                  AutoSizeText.rich(
-                    TextSpan(text: collection.title.toUpperCase()),
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 50, color: Colors.black),
-                    minFontSize: 20,
-                  ),
-                //),
+              // isThreeLine: true,
+              title: 
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 10.0, bottom: 0),
+              //   child: 
+                AutoSizeText.rich(
+                  TextSpan(text: collection.title.toUpperCase()),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 40.0, color: Colors.black),
+                  minFontSize: 20,
+                ),
+              // ),
+              subtitle: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    RichText(
+                      textAlign: TextAlign.start,
+                      text: TextSpan(
+                        text: 'XXX',
+                        style: defaultSubtitleTextStyle,
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'K',
+                            style: TextStyle(
+                                fontSize: 12.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          TextSpan(
+                            text: ' followers',
+                            style: TextStyle(
+                                fontSize: 12.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.normal),
+                          ),
+                        ],
+                      ),
+                    ),
+                    ButtonTheme(
+                      minWidth: 120,
+                      height: 30.0,
+                      child: RaisedButton(
+                        child: Text(
+                          "S'ABONNER",
+                          // style: TextStyle(fontSize: 2.0),
+                        ),
+                        color: Colors.black,
+                        textColor: Colors.white,
+                        onPressed: () {},
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              subtitle: Text('By me'),
             ),
           ),
         ),

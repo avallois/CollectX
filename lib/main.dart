@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 
-import './pages/collection_overview_page.dart';
+import './pages/profile_page.dart';
 import './pages/collection_detail_page.dart';
 import './providers/collections.dart';
 import './providers/collection_elements.dart';
@@ -11,6 +12,9 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return MultiProvider(
       providers: [
         ChangeNotifierProvider.value(
@@ -24,9 +28,8 @@ class MyApp extends StatelessWidget {
         title: 'MyShop',
         theme: ThemeData(
           primaryColor: Colors.white,
-          
         ),
-        home: CollectionOverviewPage(),
+        home: ProfilePage(),
         routes: {
           CollectionDetailPage.namedRoute: (ctx) => CollectionDetailPage(),
         },

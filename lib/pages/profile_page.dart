@@ -5,7 +5,7 @@ import '../widgets/profile/collection_list/profile_collection_list_header.dart';
 import '../widgets/profile/collection_list/profile_collection_list.dart';
 // import '../widgets/collection_list.dart';
 
-class CollectionOverviewPage extends StatelessWidget {
+class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

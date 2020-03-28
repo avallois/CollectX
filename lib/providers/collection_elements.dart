@@ -24,7 +24,7 @@ class CollectionElements with ChangeNotifier {
         'c3',
       ],
       imageUrl:
-          'https://www.cdiscount.com/pdt2/6/2/0/1/700x700/mp29685620/rw/baskets-balenciaga-speed-trainer-runner-noir-53035.jpg',
+          'https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-1029171697.jpg',
     ),
     CollectionElement(
       id: 'ce3',
@@ -36,7 +36,7 @@ class CollectionElements with ChangeNotifier {
         'c3',
       ],
       imageUrl:
-          'https://www.cdiscount.com/pdt2/6/2/0/1/700x700/mp29685620/rw/baskets-balenciaga-speed-trainer-runner-noir-53035.jpg',
+          'https://images.math.cnrs.fr/IMG/png/section8-image.png',
     ),
     CollectionElement(
       id: 'ce4',
@@ -52,14 +52,14 @@ class CollectionElements with ChangeNotifier {
     CollectionElement(
       id: 'ce5',
       title: 'Tony tony golfa',
-      description: 'Les chaussure de golf les plus moche au monde!',
+      description: 'Les chaussure de golf les plus moche au monde et puis meeeeerde comment on fait blablablab ouai ouai sisi osfqjjslkdj lqkj dkjsf sofs!',
       collections: [
         'c1',
         'c3',
         'c4',
       ],
       imageUrl:
-          'https://www.cdiscount.com/pdt2/6/2/0/1/700x700/mp29685620/rw/baskets-balenciaga-speed-trainer-runner-noir-53035.jpg',
+          'https://images.unsplash.com/photo-1533299346856-b1a85808f2ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgbs',
     ),
     CollectionElement(
       id: 'ce6',

@@ -28,7 +28,7 @@ class Collections with ChangeNotifier {
     ),
     Collection(
       id: 'c4',
-      title: 'balle de golf',
+      title: 'balle de golf de nice orange wewe la mif dejn dnej dekeieied dje',
       description:
           'Dior, Chanel, Gucci ou encore Louis Vuitton, bienvenu dans une superbe collection que je fais depuis des annees maintenant.',
       // author: 'zizi le zozo',

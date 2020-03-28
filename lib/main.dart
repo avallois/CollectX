@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 
 import './pages/profile_page.dart';
-import './pages/collection_detail_page.dart';
+import './pages/collection_page.dart';
 import './providers/collections.dart';
 import './providers/collection_elements.dart';
 
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
         home: ProfilePage(),
         routes: {
-          CollectionDetailPage.namedRoute: (ctx) => CollectionDetailPage(),
+          CollectionPage.namedRoute: (ctx) => CollectionPage(),
         },
       ),
     );

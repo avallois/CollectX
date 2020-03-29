@@ -1,7 +1,8 @@
-import 'package:app_collec/widgets/collection/collection_element_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../widgets/collection/collection_element_grid_item.dart';
+import '../widgets/collection/collection_element_list_item.dart';
 import '../widgets/collection/collection_header.dart';
 import '../providers/collections.dart';
 import '../providers/collection_elements.dart';
@@ -50,9 +51,9 @@ class CollectionPage extends StatelessWidget {
             children: <Widget>[
               GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
+                    crossAxisCount: 3),
                 itemBuilder: (context, index) {
-                  return CollectionElementListItem(
+                  return CollectionElementGridItem(
                     elementTitle: collectionElements[index].title,
                     elementDescription: collectionElements[index].description,
                     elementImageUrl: collectionElements[index].imageUrl,

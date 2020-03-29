@@ -4,27 +4,31 @@ class CollectionElementListItem extends StatelessWidget {
   final String elementTitle;
   final String elementDescription;
   final String elementImageUrl;
+  final bool pictured;
 
   CollectionElementListItem({
     @required this.elementTitle,
     @required this.elementDescription,
     @required this.elementImageUrl,
+    this.pictured = true
   });
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(left: 0.0, right: 0.0, bottom: 45.0),
-      elevation: 10.0,
+      margin: EdgeInsets.only(left: 0.0, right: 0.0, bottom: pictured == true ? 45.0: 5.0),
+      elevation: pictured == true ? 10.0 : 0.0,
       child: Column(
         children: <Widget>[
-          Container(
+          pictured == true
+          ? Container(
             width: double.infinity,
             child: Image.network(
               elementImageUrl,
               fit: BoxFit.fitWidth,
             ),
-          ),
+          )
+          : Container(),
           Container(
             height: 35.0,
             padding: EdgeInsets.all(7.0),
@@ -48,9 +52,6 @@ class CollectionElementListItem extends StatelessWidget {
               ),
             ),
           ),
-          // SizedBox(
-          //   height: 55.0,
-          // )
         ],
       ),
     );

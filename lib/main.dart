@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'MyShop',
+        title: 'CollectX',
         theme: ThemeData(
           primaryColor: Colors.white,
         ),

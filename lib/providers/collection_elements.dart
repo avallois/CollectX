@@ -87,7 +87,7 @@ class CollectionElements with ChangeNotifier {
     return [..._items];
   }
 
-  List<CollectionElement> listByCollectionId(collectionId) {
+  List<CollectionElement> findByCollectionId(collectionId) {
     return items.where((item) => item.collections.contains(collectionId)).toList();
   }
 }

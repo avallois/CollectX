@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/profile/information/profile_user_info.dart';
-import '../widgets/profile/collection_list/profile_collection_list_header.dart';
-import '../widgets/profile/collection_list/profile_collection_list.dart';
-// import '../widgets/collection_list.dart';
+import '../widgets/profile/header/profile_header.dart';
+import '../widgets/profile/collections_list/collections_list.dart';
 
 class ProfilePage extends StatelessWidget {
   @override
@@ -28,9 +26,8 @@ class ProfilePage extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: <Widget>[
-          ProfileUserInfo(),
-          ProfileCollectionListHeader(),
-          ProfileCollectionList(),
+          ProfileHeader(),
+          CollectionsList(),
         ],
       ),
     );
